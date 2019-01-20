@@ -9170,7 +9170,7 @@
 
 .image {
   display: block;
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
@@ -9180,11 +9180,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 60%;
+  height: 90%;
+  width: 90%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #e6f2ff;
 }
 
 .real:hover .overlay {
@@ -9192,7 +9192,7 @@
 }
 
 .text {
-  color: white;
+  color: black;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -9201,4 +9201,17 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
